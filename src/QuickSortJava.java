@@ -6,13 +6,12 @@ public class QuickSortJava
             int[] arr={1,6,9,3,23};
             QuickSortJava test1= new QuickSortJava();
             test1.sort(arr,0, (arr.length-1));
-            for(int i=0; i< arr.length;i++)
-            {
-                System.out.print(arr[i]+"\t");
+            for (int j : arr) {
+                System.out.print(j + "\t");
             }
         }
 
-    public int partition(int arr[], int first, int last)
+    public int partition(int [] arr, int first, int last)
     {
             int pivot = arr[last];
             int i = (first - 1);
@@ -34,7 +33,7 @@ public class QuickSortJava
             return i+1;
         }
 
-        public void sort(int arr[], int first, int last)
+        public void sort(int[] arr, int first, int last)
     {
             if(first<last)
             {
